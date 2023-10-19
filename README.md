@@ -1,4 +1,6 @@
-# python-microservices
+# python-microservices-devops
+
+[![Python application test with Github Actions](https://github.com/locemarn/python-microservices/actions/workflows/devops.yml/badge.svg)](https://github.com/locemarn/python-microservices/actions/workflows/devops.yml)
 
 ## Steps
 1. Create a Python Virtual Environment `python3 -m venv ~/.venv` or `virtualenv ~/.venv`
