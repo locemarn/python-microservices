@@ -13,7 +13,7 @@ def test_read_main():
 
 
 def test_read_phrase():
-    response = client.get("/phrase/Barack+Obama")
+    response = client.get("/phrase/Barack Obama")
     assert response.status_code == 200
     assert response.json() == {
         "result": [
