@@ -1,6 +1,5 @@
 from fastapi import FastAPI
-
-# import uvicorn
+import uvicorn
 from mylib.logic import search_wiki
 from mylib.logic import wiki as wikilogic
 from mylib.logic import phrase as wikiphrases
@@ -37,5 +36,5 @@ async def phrase(name: str):
     return {"result": result}
 
 
-# if __name__ == "__main__":
-#     uvicorn.run(app, port=8080, host="0.0.0.0")
+if __name__ == "__main__":
+    uvicorn.run(app, port=8080, host="0.0.0.0")
