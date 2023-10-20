@@ -5,6 +5,7 @@ client = TestClient(app)
 
 
 def test_read_main():
+    """test_read_main"""
     response = client.get("/")
     assert response.status_code == 200
     assert response.json() == {
@@ -13,6 +14,7 @@ def test_read_main():
 
 
 def test_read_phrase():
+    """test_read_phrase"""
     response = client.get("/phrase/Barack Obama")
     assert response.status_code == 200
     assert response.json() == {
