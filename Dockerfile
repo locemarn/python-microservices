@@ -1,4 +1,4 @@
-FROM python:3.10-bookworm
+FROM python:3.8.18-bookworm
 
 RUN mkdir -p /app
 COPY . main.py /app/
